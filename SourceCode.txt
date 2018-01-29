@@ -1,0 +1,15 @@
+import java.util.regex.Pattern;
+
+public class StringComparision {
+
+	public static void main(String[] args) {
+
+		String[] inputs = { "12345", "-12345", "123456.12", "abcd123" };
+		Pattern pattern = Pattern.compile("[0-9]{5}");
+		for (String input : inputs) {
+			System.out.println("does " + input + " is number : " + pattern.matcher(input).matches());
+		}
+
+	}
+
+}
