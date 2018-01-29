@@ -1,0 +1,17 @@
+Step 1:- Declare the array and initialise with different inputs.
+Step 2:- Use the Regex pattern & verify whether the input is exact to the pattern configured.
+		Pattern pattern = Pattern.compile(".*[0-9]{5}");
+		for (String input : inputs) {
+			System.out.println("does " + input + " is number : " + pattern.matcher(input).matches());
+		}
+		
+Step 3:- print the result
+
+
+
+
+Test cases covered:-
+	->	Leading spaces been truncated.
+	->	Characters been ignored.
+Test cases not covered:-
+	->	Trailing spaces not handled properly
